@@ -59,7 +59,7 @@ define(function (require) {
             }
         };
 
-        var $button = $form.find('input[type=submit]');
+        var $button = $form.find('[data-submit=true]');
         $button.click(function () {
             $button.attr('disable', true);
 
@@ -86,7 +86,7 @@ define(function (require) {
                             $('html').removeClass('mip-no-scroll');
                             storage.set('mip-uniqueway-timing-' + lightboxId, true);
                         } else {
-                            alert('提交成功');
+                            alert('提交成功，顾问会尽快与你联系');
                         }
                         return true;
                     } else {
