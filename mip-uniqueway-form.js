@@ -96,7 +96,7 @@ define(function (require) {
                             $('html').removeClass('mip-no-scroll');
                             storage.set('mip-uniqueway-timing-' + lightboxId, true);
                         } else {
-                            alert('提交成功，顾问会尽快与你联系');
+                            alert('我们已经收到您的咨询。 10分钟内有【无二之旅客服小秘书】添加您的微信，请注意通过哦');
                         }
 
                         if (trackEvent) {
